@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html, body, input {
+  font-family: 'Mulish', sans-serif;
+}
+
+h2, h3 {
+  color: #202024;
+  font-weight: bold;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: white;
+  color: #121214;
+}
+
+header {
+  background-color: #065E7C;  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+}
+
+nav {
+  padding: 1.2rem 2.8rem;
+  gap: 2.4rem;
+  display:flex;
+  align-items: center;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+  border-radius: .4rem;
+  border: 0;
+  opacity: 0.20;
+}
+
+.input-wrapper input::placeholder{
+  color: #6d6b6b;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;  
+}
+
+main {
+  max-width: 80.0rem;
+  margin: 0 auto;
+}
+
+.article-img img {
+  max-width: 100%;
+}
+
+.content {
+  padding: 0 2.2rem;
+}
+
+.title {
+  padding-top: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.like {
+  display: flex;
+  padding-top: .8rem;
+  gap:1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.text-article {
+  line-height: 160%; 
+  margin-bottom: 3.2rem;
+}
+
+.other-articles {
+  padding-left: 2.2rem;
+}
+
+.mini-articles  {
+  padding-top: 3.2rem;
+  display: flex;
+  align-content: center;
+  gap: 1.6rem;  
+}
+
+.mini-articles h3 {
+  font-size: 1.8rem;
+}
+
+.mini-articles p {
+  font-size: 1.4rem;
+  line-height: 160%;
+}
+
+footer {
+  margin-top: 4.0rem;
+  height: 6.4rem;
+  text-align: center;
+  background-color: #387E96;
+
+}
+
+footer p {
+  padding: 2.6rem 1.6rem 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (min-width: 50em) {
+  .title {
+    display: flex;
+    gap:36.6rem;
+  }
+}  
+
+@media (min-width: 80em) {
+  main {
+    display: flex;
+    
+    justify-items: center;
+    gap: 3.4rem;
+    max-width: 128.0rem;
+    margin-top: 4.0rem;
+  }
+
+  .principal {
+    max-width: 80.0rem;
+  }
+
+  .second {
+    width: 44.6rem;
+  }
+    
+  .content {
+      padding: 0;
+  }
+
+  .other-articles{
+      padding: 0;
+  }
+  /*
+  .mini-articles  {
+    padding-top: 3.2rem;
+    display: flex;
+    align-content: center;
+    gap: 1.6rem;  
+  }*/
+}
